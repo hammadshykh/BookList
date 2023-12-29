@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="addbookform" class="shadow-lg p-3">
+        <h1 class="py-2 text-center">Add Book</h1>
+        <div id="alert-area"></div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="title"><b>Title</b></label>
+              <input type="text" class="form-control" id="title" />
+            </div>
+            <div class="form-group my-3">
+              <label for="Author"><b>Author</b></label>
+              <input type="text" class="form-control" id="author" />
+            </div>
+            <div class="form-group">
+              <label for="ISBN"><b>ISBN</b></label>
+              <input type="text" class="form-control" id="isbn" />
+            </div>
+            <div class="submit-btn mt-4">
+              <button type="submit" class="btn btn-primary w-100" id="add-btn">
+                Submit
+              </button>
+              <button
+                type="button"
+                class="btn btn-dark w-100 d-none"
+                id="edit-btn"
+              >
+                Edit
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="section-table mt-3 shadow-lg p-2">
+        <h2 class="text-center py-2">Books list</h2>
+        <table class="table text-center">
+          <thead class="table-dark">
+            <tr>
+              <th>ID/No</th>
+              <th>Title</th>
+              <th>Author</th>
+              <th>ISBN</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody class="tbody"></tbody>
+        </table>
+        <div class="my-4">
+          <button type="button" class="btn btn-primary d-block w-100 clear-btn">
+            Clear All Books
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

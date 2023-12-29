@@ -1,0 +1,13 @@
+.container {
+  max-width: 786px;
+  margin: 0 auto;
+}
+
+.btn-remove {
+  background: white;
+  font-weight: bold;
+}
+.btn-remove:hover {
+  background-color: black;
+  color: white;
+}
